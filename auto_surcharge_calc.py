@@ -62,7 +62,7 @@ for row_num in range(2,5):   # which rows do you want to process, 12 months woul
                     pollutant = 0
                 else:
                     pollutant = float(pollutant)    # data is cleaned up and converted to a number
-            if pollutant == None:
+            if pollutant is None:
                 pollutant = 0
             if pollutant > threshold_amount[list_value]:    # no surcharge if value is below threshold, no credit for low values either
                 flow = float(flow)
